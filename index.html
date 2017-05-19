@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Table</title>
+  <style>
+
+    table {
+      margin: 0 auto;
+      width: 340px;
+      border-spacing: 0;
+    }
+
+    tr {
+      height: 34px;
+    }
+
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 30px;
+      height: 30px;
+    }
+
+    .yellow {
+      background: yellow;
+    }
+    .red {
+      background: red;
+    }
+    .black {
+      background: black;
+    }
+    .navy {
+      background: navy;
+    }
+  </style>
+</head>
+<body>
+      <table>
+        <tr>
+          <td colspan="2"></td>
+          <td colspan="4"></td>
+          <td colspan="4" class="yellow"></td>
+        </tr>
+        <tr>
+          <td rowspan="2"></td>
+          <td colspan="5" rowspan="4" class="red"></td>
+          <td colspan="4" rowspan="2" class="yellow"></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td rowspan="3"></td>
+          <td colspan="2" rowspan="2"></td>
+          <td colspan="2" rowspan="2"></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="2" class="black"></td>
+          <td colspan="3"></td>
+          <td colspan="4"></td>
+        <tr>
+          <td rowspan="3" class="yellow"></td>
+          <td colspan="3"></td>
+          <td colspan="4" rowspan="2" class="navy"></td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="2"></td>
+          <td colspan="3" class="black"></td>
+        </tr>
+        <tr>
+          <td colspan="7"></td>
+
+        </tr>
+      </table>
+</body>
+</html>
